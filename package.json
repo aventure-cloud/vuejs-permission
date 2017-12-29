@@ -1,0 +1,34 @@
+{
+  "name": "vuejs-permission",
+  "version": "0.0.3",
+  "description": "Application permission management for vuejs applications",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src -d ./lib",
+    "test": "nyc mocha --require babel-core/register",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aventure-cloud/vuejs-permission.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Valerio Barbera",
+    "email": "valerio@aventuresrl.com",
+    "url": "https://www.aventuresrl.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aventure-cloud/vuejs-permission/issues"
+  },
+  "homepage": "https://github.com/aventure-cloud/vuejs-permission#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.14.0",
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1"
+  },
+  "dependencies": {}
+}
