@@ -1,7 +1,7 @@
 {
   "name": "vuejs-permission",
-  "version": "0.0.3",
-  "description": "Application permission management for vuejs applications",
+  "version": "0.0.1",
+  "description": "Application permission management for vuejs",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel ./src -d ./lib",

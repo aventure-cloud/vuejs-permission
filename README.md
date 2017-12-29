@@ -1,2 +1,2 @@
 # vuejs-permission
-Application permission management for vuejs applications
+Application permission management for vuejs
