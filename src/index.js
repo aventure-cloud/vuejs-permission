@@ -1,9 +1,9 @@
 "use strict";
 
-import Acl from 'Acl';
+import Acl from './Acl';
 
 export default {
-    install: (Vue, {router, init, fail, save}) => {
+    install: (Vue, {router, init, fail}) => {
 
         const bus = new Vue();
 

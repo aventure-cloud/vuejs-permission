@@ -21,14 +21,14 @@ class Acl {
         return pem.find((permission) => {
             const needed = (permission.indexOf('&') !== -1) ? permission.split('&') : permission;
             if (Array.isArray(needed))
-                return needed.every( need => (this.permissions.indexOf(need) !== -1) );
+                return needed.every(need => (this.permissions.indexOf(need) !== -1));
 
             return this.permissions.indexOf(needed) !== -1;
         })
     }
 
     clearPermissions(permissions) {
-        if(!permissions)
+        if (!permissions)
             return [];
 
         if (permissions.indexOf('&') !== -1)
@@ -39,7 +39,7 @@ class Acl {
 
     set router(router) {
         router.beforeEach((to, from, next) => {
-            if(to.meta.permission === 'public' || to.meta.permission === undefined)
+            if (to.meta.permission === 'public' || to.meta.permission === undefined)
                 return next();
 
             let fail = to.meta.fail || this.fail || from.fullPath;
@@ -48,8 +48,8 @@ class Acl {
                 return next(fail);
 
             return next();
-        })
+        });
     }
 }
 
-let acl = new Acl();
+export default Acl;
