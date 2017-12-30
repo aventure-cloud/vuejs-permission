@@ -1,6 +1,6 @@
 {
   "name": "vuejs-permission",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Application permission management for vuejs",
   "main": "lib/index.js",
   "scripts": {
@@ -30,5 +30,7 @@
     "mocha": "^4.1.0",
     "nyc": "^11.4.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vue-router": "^3.0.1"
+  }
 }
